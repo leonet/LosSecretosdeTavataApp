@@ -1,0 +1,7 @@
+{
+    "phonegapcodehints.detectedExclusions": [
+        "D:/proyectos/WordApp/www/lib/moment/locale/nb.js",
+        "D:/proyectos/LosSecretosdeTavataApp/www/lib/moment/locale/ms.js",
+        "D:/proyectos/LosSecretosdeTavataApp/platforms/android/assets/www/lib/moment/locale/ml.js"
+    ]
+}
