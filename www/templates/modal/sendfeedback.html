@@ -1,6 +1,6 @@
 <ion-modal-view>
 	<ion-header-bar>
-		<h1 class="title">Send Feedback</h1>
+		<h1 class="title">Envar comentario</h1>
 		<button class="button button-clear button-dark" ng-click="feedback_modal.hide()">
 		  <i class="icon ion-ios-close-empty"></i>
 		</button>
@@ -18,13 +18,13 @@
 		  </label>
 		</div>
         <div class="padding">
-            <p ng-show="emailForm.subject.$error.required">* Subject is required</p>
-            <p ng-show="emailForm.subject.$error.minlength">* Subject must be longer than 5 characters</p>			
-            <p ng-show="emailForm.message.$error.required">* Message is required</p>
-            <p ng-show="emailForm.message.$error.minlength">* Message must be longer than 5 characters</p>				
+            <p ng-show="emailForm.subject.$error.required">* Asunto es requerido</p>
+            <p ng-show="emailForm.subject.$error.minlength">* Asunto debe tener mas de 5 caracteres</p>			
+            <p ng-show="emailForm.message.$error.required">* Mensaje es requerido</p>
+            <p ng-show="emailForm.message.$error.minlength">* Mensaje debe contener mas de 5 caracteres</p>				
         </div>		
 		<div class="padding">
-          <button class="button button-block button-{{color}}" ng-disabled="emailForm.$invalid" ng-click="sendFeedback()">Send</button>
+          <button class="button button-block button-{{color}}" ng-disabled="emailForm.$invalid" ng-click="sendFeedback()">Enviar</button>
 		</div>
 	</form>
 	</ion-content>

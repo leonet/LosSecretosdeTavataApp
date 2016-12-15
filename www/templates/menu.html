@@ -25,14 +25,14 @@
       <ion-list>
         <ion-item class="item item-icon-left" nav-clear menu-close href="#/app/posts">
           <i class="icon ion-ios-list-outline"></i>
-          Posts
+          Articulos
         </ion-item>
         <div ng-controller="CategoriesCtrl">
         <ion-item class="item item-icon-left item-icon-right"
                   ng-click="toggleGroup(group)"
                   ng-class="{active: isGroupShown(group)}">
             <i class="icon ion-ios-shuffle"></i>
-          Categories
+          Categorias
             <i class="icon" ng-class="isGroupShown(group) ? 'ion-ios-minus-empty {{color}}' : 'ion-ios-plus-empty {{color}}'"></i>            
         </ion-item>
         <ion-item class="item-accordion" menu-close
@@ -43,15 +43,15 @@
         </div>	
         <ion-item class="item item-icon-left" nav-clear menu-close href="#/app/bookmarks">
           <i class="icon ion-ios-bookmarks-outline"></i>
-          Bookmarks
+          Favoritos
         </ion-item>
         <ion-item class="item item-icon-left" nav-clear menu-close href="#/app/settings">
           <i class="icon ion-ios-gear-outline"></i>
-          Settings
+          Ajustes
         </ion-item>
         <ion-item class="item item-icon-left" nav-clear menu-close href="#/app/about">
           <i class="icon ion-ios-information-outline"></i>
-          About
+          Perfil
         </ion-item>
       </ion-list>
     </ion-content>
