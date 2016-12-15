@@ -1,6 +1,6 @@
 <ion-modal-view>
 	<ion-header-bar>
-		<h1 class="title">Add Comment</h1>
+		<h1 class="title">Añadir comentario</h1>
 		<button class="button button-clear button-dark" ng-click="addComment_modal.hide()">
 		  <i class="icon ion-ios-close-empty"></i>
 		</button>
@@ -13,24 +13,24 @@
 			<input type="email" name="email" ng-model="email" placeholder="email" required>
 		  </label>
 		  <label class="item item-input item-floating-label">
-			<span class="input-label">Name: </span>
+			<span class="input-label">Nombre: </span>
 			<input type="text" name="name" ng-model="name" placeholder="name" ng-minlength="5" required>
 		  </label>		  
 		  <label class="item item-input item-floating-label">
-			<span class="input-label">Comment: </span>
+			<span class="input-label">Comentario: </span>
 			<textarea name="comment" placeholder="Comment" rows="8" cols="10" ng-model="comment" ng-minlength="5" required></textarea>
 		  </label>
 		</div>
         <div class="padding">
-            <p ng-show="commentForm.email.$error.required">* Email is required</p>
-            <p ng-show="commentForm.email.$invalid && !commentForm.email.$pristine">* Email must be an email address</p>
-            <p ng-show="commentForm.name.$error.minlength">* Name must be longer than 5 characters</p>
-            <p ng-show="commentForm.name.$error.required">* Name is required</p>
-            <p ng-show="commentForm.comment.$error.required">* Comment is required</p>			
-            <p ng-show="commentForm.comment.$error.minlength">* Comment must be longer than 5 characters</p>
+            <p ng-show="commentForm.email.$error.required">* Email es requerido</p>
+            <p ng-show="commentForm.email.$invalid && !commentForm.email.$pristine">* Email debe ser un correo correcto</p>
+            <p ng-show="commentForm.name.$error.minlength">* Nombre debe contener mas de 5 caracteres</p>
+            <p ng-show="commentForm.name.$error.required">* Nombre es requerido</p>
+            <p ng-show="commentForm.comment.$error.required">* Comentario es requerido</p>			
+            <p ng-show="commentForm.comment.$error.minlength">* Comentario debe ser mayor a 5 caracteres</p>
         </div>		
 		<div class="padding">
-          <button class="button button-block button-{{color}}"  ng-disabled="commentForm.$invalid" ng-click="submitComment()">Add Comment</button>
+          <button class="button button-block button-{{color}}"  ng-disabled="commentForm.$invalid" ng-click="submitComment()">Agregar Comentario</button>
 		</div>
 	</form>
 	</ion-content>

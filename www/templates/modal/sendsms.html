@@ -1,6 +1,6 @@
 <ion-modal-view>
 	<ion-header-bar>
-		<h1 class="title">Enviar mensaje de texto</h1>
+		<h1 class="title">Enviar mensaje de texto(Podria tener costo con tu operador celular)</h1>
 		<button class="button button-clear button-dark" ng-click="sms_modal.hide()">
 		  <i class="icon ion-ios-close-empty"></i>
 		</button>
@@ -18,7 +18,7 @@
             <p ng-show="smsForm.message.$error.minlength || smsForm.message.$error.maxlength">* Mensaje debe contener entre uno y 160 caracteres</p>
         </div>	
 		<div class="padding">
-          <button class="button button-block button-{{color}}" ng-disabled="smsForm.$invalid" ng-click="sendSms()">Send</button>
+          <button class="button button-block button-{{color}}" ng-disabled="smsForm.$invalid" ng-click="sendSms()">Enviar</button>
 		</div>
 	</form>
 	</ion-content>
